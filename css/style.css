@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color:#f5eee5;
+}
+
+header {
+    font-family: 'Alfa Slab One', cursive;
+    background-color:#5f4e44;
+    border-bottom:#2e2e2e 4px solid;
+}
+
+header h1 {
+
+    color:#2e2e2e; 
+    font-size: 50px;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.hero-image {
+    
+    background-image: url(../img/header.jpg);
+    border-bottom: black 2px solid;
+    width: 100%;
+    min-height: 10em;
+    background-position: center;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.hero-image p {
+    font-family: 'Alfa Slab One', cursive;
+    padding-top: 4em;
+}
+
+h2 {
+
+    font-family: 'Alfa Slab One', cursive;
+    background-color:#5f4e44;
+    border-bottom:#2e2e2e 4px solid;
+    letter-spacing: 3px;
+    text-align: center;
+    color:#f5f5dc;
+    margin: 1em 0;
+}
+
+
+.dishes {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    width: 95%;
+    background-color:#e7d6c1;
+    border-radius: 5px;
+    margin: 0.5em auto;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 0.5em;
+    border:#2e2e2e 4px solid;
+    font-family: 'Catamaran', sans-serif;
+
+}
+
+.description {
+    width: 48%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.description p {
+    flex-grow: 1;
+}
+
+.dish {
+    width: 48%;
+}
+
+.dish img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+footer {
+    font-family: 'Alfa Slab One', cursive;
+    background-color:#5f4e44;
+    min-height: 8em;
+    border-top:#2e2e2e 4px solid;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1em;
+}
+
+footer a {
+    color:#f5f5dc;
+}
+
+
+/* I took the breakpoint values from bootstrap*/
+
+@media screen and (min-width:576px) {
+
+    .dishes {
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .card {
+        width: 48%;
+    }
+}
+
+@media screen and (min-width: 1201px) {
+
+    .dishes {
+        justify-content: space-around;
+    }
+
+.card {
+    flex-direction: column;
+    width: 24%;
+
+    }
+    
+.description {
+    width: 100%;
+}
+
+.dish {
+    width: 100%;
+    height: 100%;
+}
+}
+
